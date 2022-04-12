@@ -1,0 +1,22 @@
+main {
+  margin: 65px auto;
+  background: #fff;
+  .content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    @include mq(pc) {
+      padding: 0 20px;
+    }
+    &__inner {
+      background: #fff;
+      border-radius: 5px;
+      border: 1px solid $frame-color;
+      box-shadow: 0 2px 0 $frame-color;
+      padding: 15px 30px;
+    }
+  }
+  section:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>商品検索｜JAPAN REBUILT WEB ORDER SYSTEM</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- End Google Fonts -->
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- End Material icons -->
+  <link rel="stylesheet" href="scss/styles.css">
+</head>
+
+<body class="top">
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__logo">JAPAN REBUILT WEB ORDER SYSTEM</h1>
+      <form name="logout" method="post" action="" class="header__user">
+        <p class="header__user-name"><img src="img/user.png"><span>ジャパンリビルト</span>&nbsp;様</p>
+        <input type="submit" value="ログアウト" class="header__btn btn btn--sm">
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <div class="header-nav">
+      <p class="header-nav__info">
+        テスト運用を開始しました。
+      </p>
+      <nav class="header-nav__inner">
+        <ul class="header-nav__list">
+          <li class="active">
+            <a href="top.html">商品検索</a>
+          </li>
+          <li>
+            <a href="order-cart.html">カートの中身を確認</a>
+          </li>
+          <li>
+            <a href="mypage.html">マイページ</a>
+          </li>
+          <li>
+            <a href="guide.html">ご利用方法</a>
+          </li>
+        </ul>
+        <div class="header-nav__cart">
+          <img src="img/cart.png" alt="カート内">
+          <span class="header-nav__cart-label">商品計</span>
+          <span class="header-nav__cart-value">2</span>
+        </div>
+      </nav>
+    </div>
+    <div class="content search">
+      <form action="">
+        <div class="content__header">
+          <h2 class="content__header-ttl">商品検索</h2>
+          <div class="content__header-txt">
+            <p>部品検索：４つの検索条件で検索できます</p>
+            <ul class="search__links">
+              <li><a href="#top01">類別指定検索</a></li>
+              <li><a href="#top02">車両型式検索</a></li>
+              <li><a href="#top03">純正品版検索</a></li>
+              <li><a href="#top04">JRC品番検索</a></li>
+            </ul>
+          </div>
+        </div>
+        <section class="search__classifying" id="top01">
+          <div class="section__header">
+            <h3 class="section__header-ttl">類別指定検索</h3>
+          </div>
+          <div class="content__inner">
+            <div class="search-box">
+              <div class="search-box__item search-box__item--checkbox">
+                <p class="search-box__item-ttl">商品区分</p>
+                <div class="search-box__item-body">
+                  <div class="search-box__checkbox-wrapper">
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat01"><label
+                        for="c_cat01">ドライブシャフト右</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat02"><label
+                        for="c_cat02">ドライブシャフト左</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat03"><label
+                        for="c_cat03">Rドライブシャフト右</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat04"><label
+                        for="c_cat04">Rドライブシャフト左</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat05"><label
+                        for="c_cat05">ラックアンドピニオン</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat06"><label
+                        for="c_cat06">パワステポンプ</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat07"><label
+                        for="c_cat07">ATミッション</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat08"><label
+                        for="c_cat08">MTミッション</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat09"><label
+                        for="c_cat09">コンプレッサー</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat10"><label
+                        for="c_cat10">ダイナモ</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat11"><label
+                        for="c_cat11">セルモーター</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat12"><label
+                        for="c_cat12">エンジン</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat13"><label
+                        for="c_cat13">シリンダーヘッド</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat14"><label
+                        for="c_cat14">ディストリビューター</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat15"><label
+                        for="c_cat15">スロットルチャンバー</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat16"><label
+                        for="c_cat16">ペーパーライザー</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat17"><label
+                        for="c_cat17">Rデファレンシャル</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat18"><label
+                        for="c_cat18">触媒</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat19"><label
+                        for="c_cat19">ビスカスカップリング</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat20"><label
+                        for="c_cat20">ステアリングコラムシャフト</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="c_cat21"><label
+                        for="c_cat21">CVT</label></div>
+                  </div>
+                </div>
+              </div>
+              <div class="search-box__item">
+                <p class="search-box__item-ttl">型式指定</p>
+                <div class="search-box__item-body">
+                  <input type="text">
+                </div>
+              </div>
+              <div class="search-box__item">
+                <p class="search-box__item-ttl">類別区分</p>
+                <div class="search-box__item-body">
+                  <input type="text">
+                </div>
+              </div>
+              <div class="search-box__buttons">
+                <button type="button" class="btn btn--lightgray">クリア</button>
+                <button type="button" class="btn btn--icon" onclick="location.href='search-result.html'"><span class="material-icons">search</span>検 索</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="search__vehiclemodel" id="top02">
+          <div class="section__header">
+            <h3 class="section__header-ttl">車両型式検索</h3>
+          </div>
+          <div class="content__inner">
+            <div class="search-box">
+              <div class="search-box__item search-box__item--checkbox">
+                <p class="search-box__item-ttl">商品区分</p>
+                <div class="search-box__item-body">
+                  <div class="search-box__checkbox-wrapper">
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat01"><label
+                        for="vm_cat01">ドライブシャフト右</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat02"><label
+                        for="vm_cat02">ドライブシャフト左</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat03"><label
+                        for="vm_cat03">Rドライブシャフト右</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat04"><label
+                        for="vm_cat04">Rドライブシャフト左</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat05"><label
+                        for="vm_cat05">ラックアンドピニオン</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat06"><label
+                        for="vm_cat06">パワステポンプ</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat07"><label
+                        for="vm_cat07">ATミッション</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat08"><label
+                        for="vm_cat08">MTミッション</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat09"><label
+                        for="vm_cat09">コンプレッサー</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat10"><label
+                        for="vm_cat10">ダイナモ</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat11"><label
+                        for="vm_cat11">セルモーター</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat12"><label
+                        for="vm_cat12">エンジン</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat13"><label
+                        for="vm_cat13">シリンダーヘッド</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat14"><label
+                        for="vm_cat14">ディストリビューター</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat15"><label
+                        for="vm_cat15">スロットルチャンバー</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat16"><label
+                        for="vm_cat16">ペーパーライザー</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat17"><label
+                        for="vm_cat17">Rデファレンシャル</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat18"><label
+                        for="vm_cat18">触媒</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat19"><label
+                        for="vm_cat19">ビスカスカップリング</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat20"><label
+                        for="vm_cat20">ステアリングコラムシャフト</label></div>
+                    <div class="search-box__checkbox"><input type="checkbox" name="" id="vm_cat21"><label
+                        for="vm_cat21">CVT</label></div>
+                  </div>
+                </div>
+              </div>
+              <div class="search-box__item">
+                <p class="search-box__item-ttl">車両型式</p>
+                <div class="search-box__item-body">
+                  <input type="text">
+                </div>
+              </div>
+              <div class="search-box__item">
+                <p class="search-box__item-ttl">エンジン形式</p>
+                <div class="search-box__item-body">
+                  <input type="text">
+                </div>
+              </div>
+              <div class="search-box__buttons">
+                <button type="button" class="btn btn--lightgray">クリア</button>
+                <button type="button" class="btn btn--icon" onclick="location.href='search-result.html'"><span class="material-icons">search</span>検 索</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="search__officialnum" id="top03">
+          <div class="section__header">
+            <h3 class="section__header-ttl">純正品検索</h3>
+          </div>
+          <div class="content__inner">
+            <div class="search-box">
+              <div class="search-box__item">
+                <p class="search-box__item-ttl">純正品番</p>
+                <div class="search-box__item-body">
+                  <div class="search-box__serialnum">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="search-box__buttons">
+                <button type="button" class="btn btn--lightgray">クリア</button>
+                <button type="button" class="btn btn--icon" onclick="location.href='search-result.html'"><span class="material-icons">search</span>検 索</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="search__jrcnum" id="top04">
+          <div class="section__header">
+            <h3 class="section__header-ttl">JRC品番検索</h3>
+          </div>
+          <div class="content__inner">
+            <div class="search-box">
+              <div class="search-box__item">
+                <p class="search-box__item-ttl">JRC品番</p>
+                <div class="search-box__item-body">
+                  <div class="search-box__serialnum">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="search-box__buttons">
+                <button type="button" class="btn btn--lightgray">クリア</button>
+                <button type="button" class="btn btn--icon" onclick="location.href='search-result.html'"><span class="material-icons">search</span>検 索</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Copyright©JAPAN REBUILT Corporation All right reserved.</p>
+  </footer>
+  <!-- End Footer -->
+</body>
+
+</html>

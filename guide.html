@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ご利用方法｜JAPAN REBUILT WEB ORDER SYSTEM</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- End Google Fonts -->
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- End Material icons -->
+  <link rel="stylesheet" href="scss/styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__logo">JAPAN REBUILT WEB ORDER SYSTEM</h1>
+      <form name="logout" method="post" action="" class="header__user">
+        <p class="header__user-name"><img src="img/user.png"><span>ジャパンリビルト</span>&nbsp;様</p>
+        <input type="submit" value="ログアウト" class="header__btn btn btn--sm">
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <div class="header-nav">
+      <nav class="header-nav__inner">
+        <ul class="header-nav__list">
+          <li>
+            <a href="top.html">商品検索</a>
+          </li>
+          <li>
+            <a href="order-cart.html">カートの中身を確認</a>
+          </li>
+          <li>
+            <a href="mypage.html">マイページ</a>
+          </li>
+          <li class="active">
+            <a href="guide.html">ご利用方法</a>
+          </li>
+        </ul>
+        <div class="header-nav__cart">
+          <img src="img/cart.png" alt="カート内">
+          <span class="header-nav__cart-label">商品計</span>
+          <span class="header-nav__cart-value">2</span>
+        </div>
+      </nav>
+    </div>
+    <div class="content guide">
+      <div class="content__header">
+        <h2 class="content__header-ttl">ご利用方法</h2>
+        <div class="content__header-txt">
+          <p>
+            当社では、お客様の利便性向上を目指して、ウェブ上から在庫検索・注文・出荷指示が行えるウェブオーダーシステムを稼働させています。<br>
+            ご利用の際は、必ず下記のご注意をご一読ください。ご利用の手順もあらかじめご確認くださいますようお願い申し上げます。
+          </p>
+        </div>
+      </div>
+      <section class="guide__loginout">
+        <div class="section__header">
+          <h3 class="section__header-ttl">ログイン・ログアウトに関して</h3>
+          <div class="section__header-txt">
+            <ul>
+              <li>
+                お客様の情報を保護するため、第三者が使用する可能性のあるパソコンをご利用の場合は、ご利用後、必ず「ログアウトにて終了する」ようにしてください。<br>
+                ブラウザの「戻る」ボタンは使用しないようにお願い致します。お客様の大切な情報がパソコン内に残る恐れがあります。
+              </li>
+              <li>お客様に発行した、ユーザID、パスワードの管理には十分ご注意ください。</li>
+              <li>
+                ログイン後、一定時間（約10分程度）何も操作が行われないと、再度、ユーザIDとパスワードの入力が必要となります。<br>
+                また、ご登録のユーザIDとパスワードを、3回連続して間違えるとセキュリティ上ロック状態となり、以降30分はログインできなくなります。<br>
+                なお、パスワード発行の受付時間は、営業日の午前9時から午後5時（日・祝日・休業日を除く）までとなっています。
+              </li>
+              <li>午後5時以降のご注文は、翌日扱いとなります。</li>
+              <li>日曜・祝日のご依頼は、翌営業日の扱いとなりますのでご了承ください。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="guide__change">
+        <div class="section__header">
+          <h3 class="section__header-ttl">パスワード変更・登録情報の変更</h3>
+          <div class="section__header-txt">
+            <p>お客様ご自身の情報や、ご注文履歴は、ログイン後、「マイページ」で見る事ができます。パスワードや登録情報の変更も「マイページ」で行えます。</p>
+            <figure>
+              <img src="img/example.jpg" alt="ユーザー情報更新画面（メニュー）">
+              <figcaption>ユーザー情報更新画面（メニュー）</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Copyright©JAPAN REBUILT Corporation All right reserved.</p>
+  </footer>
+  <!-- End Footer -->
+</body>
+
+</html>

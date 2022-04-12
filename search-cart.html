@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>カート｜JAPAN REBUILT WEB ORDER SYSTEM</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- End Google Fonts -->
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- End Material icons -->
+  <link rel="stylesheet" href="scss/styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__logo">JAPAN REBUILT WEB ORDER SYSTEM</h1>
+      <form name="logout" method="post" action="" class="header__user">
+        <p class="header__user-name"><img src="img/user.png"><span>ジャパンリビルト</span>&nbsp;様</p>
+        <input type="submit" value="ログアウト" class="header__btn btn btn--sm">
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <div class="header-nav">
+      <nav class="header-nav__inner">
+        <ul class="header-nav__list">
+          <li>
+            <a href="top.html">商品検索</a>
+          </li>
+          <li class="active">
+            <a href="order-cart.html">カートの中身を確認</a>
+          </li>
+          <li>
+            <a href="mypage.html">マイページ</a>
+          </li>
+          <li>
+            <a href="guide.html">ご利用方法</a>
+          </li>
+        </ul>
+        <div class="header-nav__cart">
+          <img src="img/cart.png" alt="カート内">
+          <span class="header-nav__cart-label">商品計</span>
+          <span class="header-nav__cart-value">2</span>
+        </div>
+      </nav>
+    </div>
+    <div class="content search-cart">
+      <form action="">
+        <div class="content__header">
+          <h2 class="content__header-ttl">商品検索</h2>
+        </div>
+        <section class="search-cart">
+          <div class="section__header">
+            <h3 class="section__header-ttl">カート</h3>
+          </div>
+          <div class="content__inner">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>メーカー・JRC品番</th>
+                  <th>純正品番</th>
+                  <th>付属品</th>
+                  <th>価格(税抜)</th>
+                  <th>在庫</th>
+                  <th>注文数</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span>44200-28510</span>・<span>JT2334</span></td>
+                  <td>40120-28510</td>
+                  <td></td>
+                  <td>￥14,000</td>
+                  <td>有</td>
+                  <td>
+                    <div class="table__select">
+                      <select>
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                  <td><span>44200-28510</span>・<span>JT2334</span></td>
+                  <td>40120-28510</td>
+                  <td></td>
+                  <td>￥14,000</td>
+                  <td>有</td>
+                  <td>
+                    <div class="table__select">
+                      <select>
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td><input type="checkbox"></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="table__footer">
+              <p class="table__footer-txt">数量変更時は再計算してください</p>
+              <div class="table__footer-buttons">
+                <button type="button" class="btn btn--xs btn--gray">再計算</button>
+              </div>
+            </div>
+            <div class="content__buttons">
+              <button type="button" class="btn" onclick="location.href='order-cart.html'">注文へ</button>
+            </div>
+          </div>
+        </section>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Copyright©JAPAN REBUILT Corporation All right reserved.</p>
+  </footer>
+  <!-- End Footer -->
+</body>
+
+</html>
