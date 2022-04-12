@@ -885,6 +885,11 @@ main section:not(:last-child) {
 .table__header-buttons .btn:last-child {
   margin-left: 15px;
 }
+.table__header-flex-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
 .table__footer {
   margin-top: 5px;
 }
@@ -940,6 +945,21 @@ main section:not(:last-child) {
 .table--2col td input + span {
   font-size: 14px;
   margin-left: 20px;
+}
+.table--2col td .password-icon {
+  width: 50px;
+  color: #fff;
+  margin: 0 0 0 5px;
+}
+.table--2col td .password-icon i {
+  font-size: 12px;
+  margin-right: 0;
+}
+.table--result tbody tr:nth-child(odd) {
+  background: none !important;
+}
+.table--result tbody tr.noStock {
+  background: #fafafa !important;
 }
 
 /* 絞り込み検索 */

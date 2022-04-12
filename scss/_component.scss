@@ -374,6 +374,9 @@
     &-buttons .btn:last-child {
       margin-left: 15px;
     }
+    &-flex-end{
+      justify-content: flex-end;
+    }
   }
   &__footer {
     margin-top: 5px;
@@ -431,6 +434,26 @@
           font-size: 14px;
           margin-left: 20px;
         }
+      }
+      .password-icon{
+        width: 50px;
+        color: #fff;
+        margin: 0 0 0 5px;
+        i{
+          font-size: 12px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &--result{
+    tbody tr {
+      &:nth-child(odd) {
+        background: none !important;
+      }
+      &.noStock{
+        background: #fafafa !important;
       }
     }
   }

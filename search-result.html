@@ -93,7 +93,7 @@
                 <button type="button" class="btn btn--sm">全て削除</button>
               </div>
             </div>
-            <table class="table">
+            <table class="table table--result">
               <thead>
                 <tr>
                   <th>車名</th>
@@ -131,7 +131,8 @@
                   </td>
                   <td><input type="checkbox"></td>
                 </tr>
-                <tr>
+                <!-- 在庫がないときは class="noStock" を追加 -->
+                <tr class="noStock">
                   <td><p>トヨタ</p><p>ノア</p></td>
                   <td><p>TA-AZR60G</p><p>1A2FSE</p></td>
                   <td>ラックアンドピニオン</td>
@@ -139,7 +140,7 @@
                   <td>ヤマト便使用不可</td>
                   <td></td>
                   <td>￥<span>14,000</span></td>
-                  <td>有</td>
+                  <td>無</td>
                   <td>
                     <div class="table__select">
                       <select>
