@@ -323,7 +323,7 @@
 /* テーブル */
 .table {
   width: 100%;
-  font-size: 14px;
+  font-size: 13px;
   border-collapse: collapse;
   table-layout: fixed;
   thead tr {
@@ -338,7 +338,7 @@
   th,
   td {
     border: 1px solid $line-color;
-    padding: 0 12px;
+    padding: 0 0.1rem;
     vertical-align: middle;
     width: auto;
   }

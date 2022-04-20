@@ -50,6 +50,14 @@
         border-radius: 0 3px 3px 0;
         padding: 0 20px;
       }
+      button{
+        width: 50px;
+        margin-right: 5px;
+        i{
+          font-size: 12px;
+          margin: 0;
+        }
+      }
     }
   }
   &__btn {
@@ -148,34 +156,35 @@
     .table {
       th,
       td {
+        box-sizing: border-box;
         &:first-child {
-          width: 75px;
+          width: 9.5em;
         }
         &:nth-child(2) {
-          width: 110px;
+          width: 6.5em;
         }
         &:nth-child(3) {
-          max-width: 160px;
+          width: 10.5em;
         }
         &:nth-child(4) {
-          width: 180px;
+          width: 10.5em;
         }
         &:nth-child(7) {
-          width: 90px;
+          width: 5.5em;
         }
         &:nth-child(8) {
-          width: 70px;
+          width: 4.5em;
           @include mq(pc) {
-            width: 55px;
+            //width: 55px;
           }
         }
         &:nth-child(9) {
           width: 95px;
         }
         &:last-child {
-          width: 55px;
+          width: 5em;
           @include mq(pc) {
-            width: 45px;
+            //width: 45px;
           }
         }
       }
