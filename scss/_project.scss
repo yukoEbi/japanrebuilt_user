@@ -22,7 +22,7 @@
     margin: 0 auto 35px auto;
     width: 360px;
     li {
-      display: flex;
+      display: -webkit-box;
       align-items: center;
       &:first-child {
         margin-bottom: 20px;
@@ -183,7 +183,7 @@
           }
         }
         &:nth-child(9) {
-          width: 95px;
+          width: 70px;
         }
         &:last-child {
           width: 5em;
