@@ -1142,10 +1142,6 @@ main section:not(:last-child) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  height: 50px;
-  border: 1px solid #dfdfdf;
-  border-radius: 3px;
 }
 .login__form li:first-child {
   margin-bottom: 20px;
@@ -1172,12 +1168,24 @@ main section:not(:last-child) {
   padding: 0 20px;
 }
 .login__form li button {
-  width: 50px;
-  margin-right: 5px;
+  max-width: 50px;
+  margin-left: 5px;
 }
 .login__form li button i {
   font-size: 12px;
   margin: 0;
+}
+.login__formGrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
 }
 .login__btn {
   width: 230px;
@@ -1296,6 +1304,10 @@ main section:not(:last-child) {
 .search-result__body .table th:last-child,
 .search-result__body .table td:last-child {
   width: 5em;
+}
+.search-result__body .table th:last-child img,
+.search-result__body .table td:last-child img {
+  width: 30px;
 }
 .search-result__body .table th:nth-child(7) {
   padding: 0 7px;
@@ -1523,6 +1535,15 @@ main section:not(:last-child) {
 }
 .guide__loginout {
   margin-bottom: 80px !important;
+}
+
+.maintenance {
+  margin: 160px 0;
+}
+.maintenance .text {
+  text-align: center;
+  line-height: 2;
+  margin: 10rem 0;
 }
 
 .txt-color--blue {
