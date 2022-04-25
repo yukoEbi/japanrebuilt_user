@@ -36,7 +36,7 @@
             <a href="top.html">商品検索</a>
           </li>
           <li>
-            <a href="cart.html">カートの中身を確認</a>
+            <a href="order-cart.html">カートの中身を確認</a>
           </li>
           <li class="active">
             <a href="mypage.html">マイページ</a>
@@ -62,7 +62,7 @@
             <h3 class="section__header-ttl">お届け先編集</h3>
           </div>
           <div class="table__header table__header-flex-end">
-            <button type="button" class="btn btn--sm btn--gray" onclick="location.href='address.html'">削除</button>
+            <button type="button" class="btn btn--sm btn--gray" id="modal_open">削除</button>
           </div>
           <div class="content__inner">
             <table class="table table--2col">
@@ -87,14 +87,26 @@
               </tr>
             </table>
             <div class="content__buttons">
-              <button type="button" class="btn btn--gray" onclick="location.href='address.html'">戻る</button>
               <button type="button" class="btn" onclick="location.href='address-confirm.html'">確認</button>
+              <button type="button" class="btn btn--gray" onclick="location.href='address.html'">戻る</button>
             </div>
           </div>
         </section>
       </form>
     </div>
   </main>
+  <div id="modal">
+    <div class="confirm">
+      <div id="modal_content">
+        <h3 class="confirm__header">内容確認</h3>
+        <div class="confirm__body">
+          <p>データを削除してよろしいですか？</p>
+          <button id="modal_close" class="btn btn--sm">はい</button>
+          <button id="modal_close" class="btn btn--sm btn--gray">いいえ</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">

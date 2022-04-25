@@ -93,8 +93,8 @@
               </tr>
             </table>
             <div class="content__buttons">
-              <button type="button" class="btn btn--gray" onclick="location.href='mypage.html'">戻る</button>
               <button type="button" class="btn" id="modal_open">保存</button>
+              <button type="button" class="btn btn--gray" onclick="location.href='mypage.html'">戻る</button>
             </div>
           </div>
         </section>
@@ -102,12 +102,29 @@
     </div>
   </main>
 
-  <div id="modal" class="error">
-    <div id="modal_content">
-      <h3 class="error__header">入力エラー</h3>
-      <div class="error__body">
-        <p>メールアドレスは半角英数で入力してください</p>
-        <button id="modal_close" class="btn btn--sm btn--gray">閉じる</button>
+  <div id="modal">
+    <!-- エラーの場合 -->
+    <!--
+    <div class="error">
+      <div id="modal_content">
+        <h3 class="error__header">入力エラー</h3>
+        <div class="error__body">
+          <p>メールアドレスは半角英数で入力してください</p>
+          <button id="modal_close" class="btn btn--sm btn--gray">閉じる</button>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <!-- OKの場合 -->
+    <div class="confirm">
+      <div id="modal_content">
+        <h3 class="confirm__header">内容確認</h3>
+        <div class="confirm__body">
+          <p>更新しますか？更新しますか？更新しますか？更新しますか？更新しますか？更新しますか？更新しますか？</p>
+          <button id="modal_close" class="btn btn--sm">はい</button>
+          <button id="modal_close" class="btn btn--sm btn--gray">いいえ</button>
+        </div>
       </div>
     </div>
   </div>
