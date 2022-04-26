@@ -87,7 +87,7 @@
               </tr>
             </table>
             <div class="content__buttons">
-              <button type="button" class="btn" onclick="location.href='address-confirm.html'">確認</button>
+              <button type="button" class="btn" onclick="location.href='address-confirm.html'" id="modal_open">確認</button>
               <button type="button" class="btn btn--gray" onclick="location.href='address.html'">戻る</button>
             </div>
           </div>
@@ -96,6 +96,19 @@
     </div>
   </main>
   <div id="modal">
+    <!-- エラーの時 -->
+    <!--
+    <div id="modal" class="error">
+      <h3 class="error__header">入力エラー</h3><div id="modal_content">
+        <div class="error__body">
+          <p>電話番号は半角数字で入力してください</p>
+          <button id="modal_close" class="btn btn--sm btn--gray">閉じる</button>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <!-- OKの時 -->
     <div class="confirm">
       <div id="modal_content">
         <h3 class="confirm__header">内容確認</h3>

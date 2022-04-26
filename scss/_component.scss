@@ -348,6 +348,46 @@
     font-weight: initial;
     background: #666;
     text-align: center;
+    .indicator{
+      display: inline-block;
+      margin: 0 0 0 5px;
+      width: 15px;
+      height: 15px;
+      position: relative;
+      vertical-align: middle;
+      &::before{
+        content: "";
+        height: 5px;
+        width: 5px;
+        position: absolute;
+        border: 6px solid transparent;
+        border-bottom-color: #fff;
+        top: -7px;
+        left: 0;
+        cursor: pointer;
+      }
+      &.is_up{
+        &::before{
+          border-bottom-color: $main-color;
+        }
+      }
+      &::after{
+        content: "";
+        height: 5px;
+        width: 5px;
+        position: absolute;
+        border: 6px solid transparent;
+        border-top-color: #fff;
+        top: 7px;
+        left: 0;
+        cursor: pointer;
+      }
+      &.is_down{
+        &::after{
+          border-top-color: $main-color;
+        }
+      }
+    }
   }
   td {
     height: 40px;
