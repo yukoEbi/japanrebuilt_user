@@ -2,8 +2,7 @@ main {
   margin: 65px auto;
   background: #fff;
   .content {
-    max-width: 1200px;
-    width: 100%;
+    width: 1200px;
     margin: 0 auto;
     @include mq(pc) {
       padding: 0 20px;

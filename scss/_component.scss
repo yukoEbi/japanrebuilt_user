@@ -50,8 +50,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      max-width: 1200px;
-      width: 100%;
+      width: 1200px;
       border-bottom: 5px solid $main-color;
       margin: 0 auto;
       @include mq(pc) {
@@ -265,7 +264,7 @@
 .search-box {
   &__item {
     display: flex;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #aaaaaa;
     padding-bottom: 5px;
     padding-top: 5px;
     &-ttl {
