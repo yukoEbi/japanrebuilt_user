@@ -946,7 +946,7 @@ main section:not(:last-child) {
   position: absolute;
   right: 0;
   top: 0;
-  content: "";
+  content: "\e5cf";
   font-family: "Material Icons";
   font-size: 24px;
   color: #999;
@@ -1615,6 +1615,9 @@ main section:not(:last-child) {
   text-align: center;
   line-height: 2;
   margin: 10rem 0;
+}
+.maintenance .btn {
+  margin: 1rem 0 0;
 }
 
 .txt-color--blue {
